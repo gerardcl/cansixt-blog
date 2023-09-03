@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      {% if config.extra.author.avatar %}
+      <figure class="image is-flex is-justify-content-center is-align-items-center">
+        <img class="is-rounded" src="{{ config.extra.author.avatar }}" style="max-width: 192px" />
+      </figure>
+      {% endif %}
+      <h1 class="title is-2">{{ section.title }}</h1>
+      <p class="subtitle is-4">{{ section.description }}</p>
+    </div>
+    <div class="content">
+      {{ section.content | safe }}
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-centered">
+    <div class="columns">
+      <article class="column">
+        <h3 class="subtitle is-3 is-centered"><a href="{{ get_taxonomy_url(kind='categories', name='sustainability') }}"><b>S</b>ustainability</a></h3>
+        <p>We believe in leaving the world at least as good as we found it.</p>
+      </article>
+      <article class="column">
+        <h3 class="subtitle is-3 is-centered"><a href="{{ get_taxonomy_url(kind='categories', name='health') }}"><b>H</b>ealth</a></h3>
+        <p>We observe, learn and practise for a healthy lifestyle.</p>
+      </article>
+      <article class="column">
+        <h3 class="subtitle is-3 is-centered"><a href="{{ get_taxonomy_url(kind='categories', name='innovation') }}"><b>I</b>nnovation</a></h3>
+        <p>The way to survive in this world and maybe help others.</p>
+      </article>
+      <article class="column">
+        <h3 class="subtitle is-3 is-centered"><a href="{{ get_taxonomy_url(kind='categories', name='technology') }}"><b>T</b>echnology</a></h3>
+        <p>We want technology to be of good use and for our needs.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    {{ macros:: social_links( social_config=config.extra.social) }}
+    <p> 🏗️ Constantly under development  🏗️ </p>
+  </div>
+</section>
+{% endblock %}
