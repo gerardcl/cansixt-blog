@@ -2,6 +2,7 @@
 title="Let's talk about S.H.I.T."
 date=2023-09-03
 description="And have some fun while doing it"
+authors = ["Gerard"]
 [taxonomies]
 categories = ["Sustainability","Health","Innovation","Technology"]
 tags = ["share", "shit"]

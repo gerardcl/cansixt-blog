@@ -57,6 +57,7 @@ hard_link_static = false
 taxonomies = [
     { name = "categories", feed = true, paginate_by = 10 },
     { name = "tags", feed = true, paginate_by = 10 },
+    { name = "authors" },
 ]
 
 theme = "DeepThought"
@@ -200,7 +201,7 @@ webmanifest = "/icons/site.webmanifest"
 
 # Author details
 [extra.author]
-name = "GerardCL"
+name = "Gerard"
 avatar = "/images/avatar.png"
 
 # Social links
