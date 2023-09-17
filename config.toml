@@ -167,12 +167,12 @@ index_format = "elasticlunr_javascript"
 
 # Enable external libraries
 [extra]
-katex.enabled = true
-katex.auto_render = true
+katex.enabled = false
+katex.auto_render = false
 
-chart.enabled = true
-mermaid.enabled = true
-galleria.enabled = true
+chart.enabled = false
+mermaid.enabled = false
+galleria.enabled = false
 
 languages = [
     {code = "ca"},

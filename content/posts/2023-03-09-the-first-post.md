@@ -19,7 +19,7 @@ Such topics will jump around **S**ustainability, **H**ealth, **I**nnovation and 
 
 Think about it: we are all consumers of content around the different media, name it Internet, Newspapers, Magazines, Blogs, Vblogs, and whatnot. But, certainly, we can all be producers of it too. We all have something to share, that might be useful to someone or perhaps even inspire anyone. And, such an idea has been growing in our minds until today, that we have officially created this blog site, together with this first post.
 
-# Why about S.H.I.T.
+## Why about S.H.I.T.
 
 Yes, we all have a lot of shit to share, so we do. But, seriously speaking, we want to talk about good shit.
 
@@ -28,19 +28,19 @@ And, call it coincidence or not, we found ourselves in a crazy and fun interject
 - we like talking about shit (which is a healthy habit if you think about it)
 - the word shit is an acronym, which we will explain through the following [acrostic](https://en.wikipedia.org/wiki/Acrostic):
 
-## Sustainability
+### Sustainability
 
 The sentence `we believe in leaving the world at least as good as we found it` is as powerful as living in an as much as possible sustainable way.
 
-## Health
+### Health
 
 `We observe, learn and practise for a healthy lifestyle`, and if not, how would we be able to create good shit?
 
-## Innovation
+### Innovation
 
 `The way to survive in this world and maybe help others` is only possible if we are creative and apply such creativity to specific goals.
 
-## Technology
+### Technology
 
 `We want technology to be of good use and for our needs`, if not then this is not sustainable nor healthy nor innovative at all.
 
