@@ -21,7 +21,7 @@ Currently working as a Backend Engineer at [BI X](https://www.bix-digital.com). 
 
 I believe technology can solve a lot of problems, and I try to build digital products with the goal to help people.
 
-Considering myself a 🦀 [Rustacean](https://www.rust-lang.org/) and a 🐍 [Pythonista](https://www.python.org/).
+Advocate of [OpenSource Software](https://en.wikipedia.org/wiki/Open-source_software) and [Hardware](https://en.wikipedia.org/wiki/Open-source_hardware), and I consider myself 🦀 [Rustacean](https://www.rust-lang.org/) and 🐍 [Pythonista](https://www.python.org/).
 
 I love nature and I am also learning about [permaculture](https://en.wikipedia.org/wiki/Permaculture) and [syntropic farming](https://en.wikipedia.org/wiki/Ernst_G%C3%B6tsch).
 

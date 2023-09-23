@@ -80,17 +80,7 @@ cc.run({
                     {
                         title: 'Cookie usage 📢',
                         description: 'This website https://blog.cansixt.cat uses cookies to help us understand the user experience when users browse our website and also allows us to improve it. You can choose for each category of each Third-Party to opt-in/out whenever you want. For more details relative to cookies and personal data, please read the full <a href="/privacy-policy" class="cc-link">privacy policy</a>.'
-                        // description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/privacy-policy" class="cc-link">privacy policy</a>.'
                     },
-                    // {
-                    //     title: 'Strictly necessary cookies',
-                    //     description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
-                    //     toggle: {
-                    //         value: 'necessary',
-                    //         enabled: true,
-                    //         readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
-                    //     }
-                    // },
                     {
                         title: 'Strictly necessary cookies',
                         description: 'This Cookie Notice ONLY stores a cookie as long as you did or did not accept to be tracked on. This cookie is essential for the proper functioning of this website. Without this cookie, the website could not properly offer consent management',
