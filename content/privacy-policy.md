@@ -14,9 +14,8 @@ Our website address is [https://blog.cansixt.cat](https://blog.cansixt.cat). Pri
 
 ## SECTION 2: WHAT PERSONAL DATA WE COLLECT AND WHY WE COLLECT IT
 
-**In Short**: We collect personal information that you provide to us. Some information — such as your
-Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically
-when you visit our website.
+**In Short**: We collect non-sensitive personal information that you provide to us, such as your
+Internet Protocol (IP) address, browser and device characteristics. We do ONLY collect it as long as you accept via the Cookie Notice.
 
 ### EMBEDDED CONTENT FROM OTHER WEBSITES
 
@@ -28,7 +27,7 @@ with the embedded content if you have an account and are logged into that websit
 
 ### TRACKING TECHNOLOGIES
 
-We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice (click on "Manage cookie settings" button in the footer to load it).
+We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in via the Cookie Notice (click on "Manage cookie settings" button in the footer to load it).
 
 ## SECTION 3: WHO WE SHARE YOUR DATA WITH
 
@@ -47,13 +46,9 @@ The data collected may be shared with service providers and others who help with
 - analytics, and
 - enforcement of our Terms of Service Agreement and other agreements;
 
-    Other users of the site to identify you to anyone to whom you send messages or make comments through the Services;
-
     Persons or entities with whom you consent to have your Personal Data shared;
 
-    Third parties in order to prevent damage to our property (tangible and intangible), for safety reasons, or to collect amounts owed to us;
-
-    Merchants and payment processors; and
+    Third parties in order to prevent damage to our property (tangible and intangible), for safety reasons, or to collect amounts owed to us; and
 
     Third parties as we believe necessary or appropriate, in any manner permitted under applicable law, including laws outside your country of residence.
 
@@ -63,21 +58,15 @@ We will never sell, rent, or lease your Personal Data to a third party.
 
 ## SECTION 4: HOW LONG WE RETAIN YOUR DATA
 
-If you leave a comment, the comment and its metadata are retained for one year. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.
-
-For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.
-
-Analytics data is retained indefinitely.
-
-Contact forms are held for one year.
+Analytics data related to each web visitor's generated ID is retained for 90 days.
 
 ## SECTION 5: WHAT RIGHTS YOU HAVE OVER YOUR DATA
 
-If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.
+You can also request that we erase any personal data we hold about you. For that we will require to know the cookies IDs generated when accepting via the Cookie Notice. This does not include any data we are obliged to keep for administrative, legal, or security purposes.
 
 ## SECTION 6: WHERE WE SEND YOUR DATA
 
-Visitor comments may be checked through an automated spam detection service. Third parties have access to your data as noted within this agreement.
+Third parties have access to your data as noted within this agreement.
 
 ## ADDITIONAL INFORMATION
 

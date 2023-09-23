@@ -17,11 +17,11 @@ cc.run({
     // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
     // cookie_expiration: 182,                 // default: 182 (days)
     // cookie_necessary_only_expiration: 182   // default: disabled
-    cookie_domain: 'cansixt.cat',              // default: current domain
+    cookie_domain: 'blog.cansixt.cat',         // default: current domain
     // cookie_path: '/',                       // default: root
     // cookie_same_site: 'Lax',                // default: 'Lax'
     // use_rfc_cookie: false,                  // default: false
-    revision: 0,                               // default: 0
+    revision: 1,                               // default: 0
 
     onFirstAction: function(user_preferences, cookie){
         // callback triggered only once
@@ -79,7 +79,7 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage 📢',
-                        description: 'This website https://blog.cansixt.cat uses cookies to help us understand the user experience when users browse our website and also allows us to improve it. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/privacy-policy" class="cc-link">privacy policy</a>.'
+                        description: 'This website https://blog.cansixt.cat uses cookies to help us understand the user experience when users browse our website and also allows us to improve it. You can choose for each category of each Third-Party to opt-in/out whenever you want. For more details relative to cookies and personal data, please read the full <a href="/privacy-policy" class="cc-link">privacy policy</a>.'
                         // description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/privacy-policy" class="cc-link">privacy policy</a>.'
                     },
                     // {
@@ -91,6 +91,15 @@ cc.run({
                     //         readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
                     //     }
                     // },
+                    {
+                        title: 'Strictly necessary cookies',
+                        description: 'This Cookie Notice ONLY stores a cookie as long as you did or did not accept to be tracked on. This cookie is essential for the proper functioning of this website. Without this cookie, the website could not properly offer consent management',
+                        toggle: {
+                            value: 'necessary',
+                            enabled: true,
+                            readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                        }
+                    },
                     {
                         title: 'Performance and Analytics cookies',
                         description: 'They allow us to recognize and count the number of visitors and to see how visitors move around our website when they are using it. This helps us to improve the way our website works, for example, by ensuring that users are finding what they are looking for easily.',
