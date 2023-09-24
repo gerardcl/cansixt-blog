@@ -10,12 +10,12 @@ Tech stack is:
 
 ## Blog
 
-We create blog posts on Markdown files, with some metadata (frontmatter).
+We create blog posts on Markdown files, with some metadata (frontmatter) and making use of the extended Markdown specification ([CommonMark](https://commonmark.org/)) being used in Zola.
 
 The `zola` CLI let's us see changes in real-time by using:
 
 ```bash
-zola serve
+zola serve --drafts
 ```
 
 ## Build
