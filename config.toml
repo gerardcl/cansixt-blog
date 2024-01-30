@@ -219,7 +219,7 @@ email = "contact@cansixt.cat"
 # google_scholar = "<googlescholar_userid>"
 # orcid = "<orcid_userid>"
 # mastodon_username = "gerardcl"
-# mastodon_server = "mastodon.cat"
+# mastodon_server = "fosstodon.org"
 
 # To add google analytics
 [extra.analytics]

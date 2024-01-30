@@ -12,7 +12,7 @@ github = "gerardcl"
 linkedin = "gerardcl"
 stackoverflow = "1415478"
 mastodon_username = "gerardcl"
-mastodon_server = "mastodon.cat"
+mastodon_server = "fosstodon.org"
 +++
 
 I am a M.Sc. Telecomunications Engineer from the [Universitat Politècnica de Catalunya](https://www.upc.edu/).
