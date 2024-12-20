@@ -223,7 +223,7 @@ email = "contact@cansixt.cat"
 
 # To add google analytics
 [extra.analytics]
-woopra = "blog.cansixt.cat"
+google = "G-YNGXRWZR3C"
 
 # To add disqus comments
 [extra.commenting]

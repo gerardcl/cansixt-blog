@@ -22,7 +22,7 @@ jobs:
       - name: Install Rust with WASM toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: 1.71
+          toolchain: 1.77
           targets: wasm32-wasi
 
       - name: Install Spin

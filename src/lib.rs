@@ -7,9 +7,11 @@ use spin_sdk::{
 /// A simple Spin HTTP component.
 #[http_component]
 fn handle_test(req: Request) -> Result<Response> {
-    println!("{:?}", req.headers());
-    Ok(http::Response::builder()
+    for header in req.headers() {
+        println!("{}: {:?}", header.0, header.1);
+    }
+    Ok(Response::builder()
         .status(200)
         .header("foo", "bar")
-        .body(Some("Hello, Fermyon".into()))?)
+        .body("Hello, Fermyon").build())
 }

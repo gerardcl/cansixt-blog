@@ -100,10 +100,17 @@ cc.run({
                         },
                         cookie_table: [             // list of all expected cookies
                             {
-                                col1: 'wooTracker',
-                                col2: 'woopra.com',
-                                col3: '5 days',
-                                col4: 'ID used to identify users for 5 days after last activity',
+                                col1: '^_ga',       // match all cookies starting with "_ga"
+                                col2: 'google.com',
+                                col3: '2 years',
+                                col4: 'ID used to identify users',
+                                is_regex: true
+                            },
+                            {
+                                col1: '_gid',
+                                col2: 'google.com',
+                                col3: '1 day',
+                                col4: 'ID used to identify users for 24 hours after last activity',
                             }
                         ]
                     },
