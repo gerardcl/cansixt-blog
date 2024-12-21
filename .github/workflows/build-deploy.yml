@@ -11,10 +11,10 @@ jobs:
     name: Zola build and Spin deploy
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v4.2.2
 
       - name: Zola build
-        uses: shalzz/zola-deploy-action@v0.17.2
+        uses: shalzz/zola-deploy-action@v0.19.2
         env:
           BUILD_ONLY: true
           CHECK_LINKS: true
@@ -22,13 +22,16 @@ jobs:
       - name: Install Rust with WASM toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: 1.77
+          toolchain: 1.82
           targets: wasm32-wasi
 
       - name: Install Spin
         uses: fermyon/actions/spin/setup@v1
+        with:
+          version: "v0.10.1"
 
       - name: Spin build and deploy
         uses: fermyon/actions/spin/deploy@v1
         with:
+          version: "v0.10.1"
           fermyon_token: ${{ secrets.FERMYON_CLOUD_TOKEN }}
