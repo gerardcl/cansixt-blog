@@ -27,11 +27,11 @@ jobs:
 
       - name: Install Spin
         uses: fermyon/actions/spin/setup@v1
-        with:
-          version: "v0.10.1"
+        # with:
+          # version: "v0.10.1"
 
       - name: Spin build and deploy
         uses: fermyon/actions/spin/deploy@v1
         with:
-          version: "v0.10.1"
+          # version: "v0.10.1"
           fermyon_token: ${{ secrets.FERMYON_CLOUD_TOKEN }}
