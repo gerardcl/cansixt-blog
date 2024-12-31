@@ -1,14 +1,8 @@
-<div class="{{class | default(value="is-flex is-justify-content-center is-align-items-center")}}">
-    <iframe
-        {% if type is matching("youtube") %}
-        src="https://www.youtube.com/embed/{{id}}"
-        {% elif type is matching("vimeo") %}
-        src="https://player.vimeo.com/video/{{id}}"
-        {% endif %}
-        width="640" height="338"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen>
-    </iframe>
+<div class="{{class | default(value="is-flex is-justify-content-center is-align-items-center")}}
+    {% if type is matching("youtube") %}
+    data-category="analytics" data-service="youtube" data-id="{{id}}"
+    {% elif type is matching("vimeo") %}
+    data-category="analytics" data-service="vimeo" data-id="{{id}}"
+    {% endif %}
+    data-autoscale>
 </div>

@@ -3,13 +3,14 @@
 {% extends "DeepThought/templates/base.html" %}
 
   {% block user_custom_stylesheet %}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.2/dist/cookieconsent.css" integrity="sha384-HQHMzoWP+kltAJMEUJFZfYQfSPkWSgSMmlXrRJa/Qw5uy+4tRsNV8etmYHEtqDdK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.3.0/dist/iframemanager.css" crossorigin="anonymous">
   {% endblock %}
 
   {% block analytics %}
   {% if config.extra.analytics.google %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.analytics.google }}"></script>
-  <script type="text/plain" data-cookiecategory="analytics">
+  <script type="text/plain" data-category="analytics" data-service="!ga">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
@@ -48,12 +49,13 @@
           <span><a href="https://www.fermyon.com/spin/" target="_blank" rel="noopener noreferrer">spin</a></span>
         </span>
       </p>
-      <p>Check our <a href="/privacy-policy" class="cc-link">privacy policy</a> and <button type="button" data-cc="c-settings">Manage cookie settings</button> anytime.</p>
+      <p>Check our <a href="/privacy-policy" class="cc-link">privacy policy</a> and <button type="button" data-cc="show-preferencesModal">Manage cookie settings</button> anytime.</p>
     </div>
   </footer>
   {% endblock %}
 
   {% block user_custom_js %}
-  <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.2/dist/cookieconsent.js" integrity="sha384-cGQtK+3XfWd72gOmFhEwkKb/u1Z0m9OumW0IZ3wZMK76CFFrnXjDf+fB+jIVmmv8" crossorigin="anonymous"></script>
-  <script defer src="{{ get_url(path='js/cookieconsent-init.js') }}"></script>
+  <script type="module" defer src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.3.0/dist/iframemanager.js"></script>
+  <script type="module" defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+  <script type="module" defer src="{{ get_url(path='js/cookieconsent.js') }}"></script>
   {% endblock %}
