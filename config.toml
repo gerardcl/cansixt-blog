@@ -226,8 +226,8 @@ email = "contact@cansixt.cat"
 google = "G-YNGXRWZR3C"
 
 # To add disqus comments
-[extra.commenting]
-disqus = "cansixt"
+# [extra.commenting]
+# disqus = "cansixt"
 
 # To enable mapbox maps
 # [extra.mapbox]

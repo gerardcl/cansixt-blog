@@ -8,7 +8,6 @@ categories = ["Technology", "Sustainability"]
 tags = ["prototype", "spin", "zola"]
 [extra]
 toc = true
-comments = false
 +++
 
 We thought one of the first posts could be about how we run Can Sixt's blog, this blog site. With this in mind, we are going to explain what steps have been taken to make this blog happen, while showcasing some implementation details. This might turn into a series of posts indeed.

@@ -8,7 +8,6 @@ categories = ["Sustainability","Health","Innovation","Technology"]
 tags = ["share", "shit"]
 [extra]
 toc = true
-comments = false
 +++
 
 
