@@ -22,7 +22,7 @@ Having a statically generated blog site means this: "it's static" 😧. Then, ho
 
 ### Activity Pub
 
-This is when we though if it would be possible to integrate with [Activity Pub](https://en.wikipedia.org/wiki/ActivityPub) 🤓, an open, decentralized protocol for social networking, standardized by the World Wide Web Consortium ([W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)). It enables different servers or platforms to interact seamlessly, allowing users to share, follow, and engage with content across various instances, even if those instances are hosted by different providers. 
+This is when we though if it would be possible to integrate with [Activity Pub](https://en.wikipedia.org/wiki/ActivityPub) 🤓, an open, decentralized protocol for social networking, standardized by the World Wide Web Consortium ([W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)). It enables different servers or platforms to interact seamlessly, allowing users to share, follow, and engage with content across various instances, even if those instances are hosted by different providers.
 
 ### Fediverse
 
@@ -54,7 +54,7 @@ Once we finish a blog post we would create a post (called `toot` when publishing
 But! We already know how the URL of the post will look like as we can run locally, with live-reload, our blog. So:
 
   1. Run `zola serve` and go to the almost-ready-to-publish post.
-  2. Get the text path of the URL in the navigation bar in your browser, it should be something like: `/post/your-article-title`.
+  2. Get the text path of the URL in the navigation bar in your browser, it should be something like: `/posts/your-article-title`.
   3. Publish your toot with the to-be-working link, and copy the link to the toot.
   3. At the end of the blog post content add the toot information (see `The beauty` section [below](#the-beauty)).
   5. Publish your post! There will be people waiting for the link to work!
@@ -260,7 +260,7 @@ Here the `comments.html` shortcode (that you can also see [here](https://github.
 </div>
 ```
 
-Note that we keep making use of the Bulma's CSS framework, using Bulma's provided classes, mainly the ones for [media](https://bulma.io/documentation/layout/media-object/#nesting) publishing. 
+Note that we keep making use of the Bulma's CSS framework, using Bulma's provided classes, mainly the ones for [media](https://bulma.io/documentation/layout/media-object/#nesting) publishing.
 
 ### The beauty
 
