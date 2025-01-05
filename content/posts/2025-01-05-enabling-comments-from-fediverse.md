@@ -51,10 +51,13 @@ To be pragmatic, we want something reusable that enables to comment on each blog
 
 Once we finish a blog post we would create a post (called `toot` when publishing in Mastodon; expect from now on the use/mention of it) in Mastodon too, sharing the link to the blog post. But, what do we do first? 🚨 This is like [the chicken or the egg](https://en.wikipedia.org/wiki/Chicken_or_the_egg) problem.
 
-We decide for the following steps before publishing a blog post:
+But! We already know how the URL of the post will look like as we can run locally, with live-reload, our blog. So:
 
-  1. Create a Mastodon public toot and get the link to it.
-  2. At the end of the blog post do use the toot.
+  1. Run `zola serve` and go to the almost-ready-to-publish post.
+  2. Get the text path of the URL in the navigation bar in your browser, it should be something like: `/post/your-article-title`.
+  3. Publish your toot with the to-be-working link, and copy the link to the toot.
+  3. At the end of the blog post content add the toot information (see `The beauty` section below).
+  5. Publish your post! There will be people waiting for the link to work!
 
 ### The tooling
 
