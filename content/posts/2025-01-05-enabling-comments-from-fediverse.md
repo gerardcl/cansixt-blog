@@ -56,7 +56,7 @@ But! We already know how the URL of the post will look like as we can run locall
   1. Run `zola serve` and go to the almost-ready-to-publish post.
   2. Get the text path of the URL in the navigation bar in your browser, it should be something like: `/post/your-article-title`.
   3. Publish your toot with the to-be-working link, and copy the link to the toot.
-  3. At the end of the blog post content add the toot information (see `The beauty` section below).
+  3. At the end of the blog post content add the toot information (see `The beauty` section [below](#the-beauty)).
   5. Publish your post! There will be people waiting for the link to work!
 
 ### The tooling

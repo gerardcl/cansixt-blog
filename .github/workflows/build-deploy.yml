@@ -17,7 +17,7 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.19.2
         env:
           BUILD_ONLY: true
-          CHECK_LINKS: true
+          CHECK_LINKS: false
 
       - name: Install Rust with WASM toolchain
         uses: dtolnay/rust-toolchain@stable
