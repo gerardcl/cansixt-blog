@@ -9,6 +9,8 @@
 
         <p class="notification is-warning soft">We love the <a href="https://fediverse.info/" target="_blank">Fediverse</a>. You can interact with this <strong><a target="_blank" href="https://{{host}}/@{{username}}/{{id}}">post</a></strong> thanks to <a href="https://joinmastodon.org/" target="_blank">Mastodon</a>. You can use your existing account hosted by another Mastodon server or compatible platform, if you don't have an account on this one. Only known non-private replies (comments) to this post are displayed.</p>
         <button class="button" id="load-comment">Load comments</button>
+        <!-- Include DOMPurify library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js"></script>
 
         <script type="text/javascript">
             function escapeHtml(unsafe) {
@@ -47,11 +49,21 @@
                 return output;
             }
 
+            // Configure DOMPurify to allow target="_blank" on href elements
+            DOMPurify.addHook('afterSanitizeAttributes', function (node) {
+                // If the node is an anchor tag and has a href attribute
+                if (node.tagName === 'A' && node.getAttribute('href')) {
+                    node.setAttribute('target', '_blank');
+                }
+            });
+
             async function loadComments() {
                 try {
                     // Fetch comments from the Mastodon API (replace with actual API URL)
-                    const response = await fetch('https://{{host}}/api/v1/statuses/{{id}}/context');
-                    const data = await response.json();
+                    const comments_response = await fetch('https://{{host}}/api/v1/statuses/{{id}}/context');
+                    const status_response = await fetch('https://{{host}}/api/v1/statuses/{{id}}');
+                    const comments_data = await comments_response.json();
+                    const status_data = await status_response.json();
                     const postId = "{{id}}";
 
                     // Container for comments
@@ -159,6 +171,37 @@
                         return mediaDiv;
                     }
 
+                    // Create a div to hold the main post's likes, replies, and shares
+                    const mainPostActions = document.createElement('div');
+                    mainPostActions.className = 'level is-mobile';
+
+                    const mainPostLikes = document.createElement('div');
+                    mainPostLikes.className = 'level-item has-text-centered';
+                    mainPostLikes.innerHTML = `<span class="icon"><i class="fas fa-heart"></i></span> ${status_data.favourites_count}`;
+
+                    const mainPostReplies = document.createElement('div');
+                    mainPostReplies.className = 'level-item has-text-centered';
+                    mainPostReplies.innerHTML = `<span class="icon"><i class="fas fa-reply"></i></span> ${status_data.replies_count || 0}`;
+
+                    const mainPostShares = document.createElement('div');
+                    mainPostShares.className = 'level-item has-text-centered';
+                    mainPostShares.innerHTML = `<span class="icon"><i class="fas fa-retweet"></i></span> ${status_data.reblogs_count}`;
+
+                    const mainPostRef = document.createElement('div');
+                    mainPostRef.className = 'level-item has-text-centered';
+                    mainPostRef.innerHTML = `<p>[ Interactions on <a target="_blank" href="https://{{host}}/@{{username}}/{{id}}">the original post</a> above, on Mastodon ]</p>`;
+
+                    mainPostActions.appendChild(mainPostLikes);
+                    mainPostActions.appendChild(mainPostReplies);
+                    mainPostActions.appendChild(mainPostShares);
+                    mainPostActions.appendChild(mainPostRef);
+
+                    const mainPostInfo = document.createElement('div');
+                    mainPostInfo.className = 'notification';
+                    mainPostInfo.appendChild(mainPostActions);
+
+                    commentsContainer.appendChild(mainPostInfo);
+
                     // Process and render comments
                     function renderComments(comments, parentId, level = 0) {
                         comments.forEach(comment => {
@@ -170,14 +213,14 @@
                         });
                     }
 
-                    if (data.descendants.length > 0) {
+                    if (comments_data.descendants.length > 0) {
                         // Render top-level comments and their replies
-                        renderComments(data.descendants, postId);
+                        renderComments(comments_data.descendants, postId);
                     } else {
                         commentsContainer.innerHTML += "No comments yet...";
                     }
                     commentsContainer.innerHTML += "<br><br>";
-                    commentsSubTitle.innerHTML += "<br><br>";
+                    commentsContainer.innerHTML = DOMPurify.sanitize(commentsContainer.innerHTML);
 
                 } catch (error) {
                     console.error('Error loading Mastodon comments:', error);
