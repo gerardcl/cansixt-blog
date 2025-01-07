@@ -4,7 +4,7 @@ description="How to enable blog post comments from the Fediverse"
 authors = ["Gerard"]
 date=2025-01-05
 [taxonomies]
-categories = ["Technology", "Sustainability"]
+categories = ["Technology", "Innovation"]
 tags = ["fediverse", "prototype", "spin", "zola"]
 [extra]
 toc = true
@@ -69,7 +69,7 @@ Basically, we need to get our toot context data object, which is a [GET](https:/
 
 With that data at hand we can then go over all the replies data thread, like who replied and to whom, when, from where and what. All being public data, who's publishers decided to.
 
-You can see the latest `comments.html` shortcode code version [here](https://github.com/gerardcl/cansixt-blog/blob/main/templates/shortcodes/comments.html)).
+You can see the latest `comments.html` shortcode code version [here](https://github.com/gerardcl/cansixt-blog/blob/main/templates/shortcodes/comments.html).
 
 Note that we keep making use of the Bulma's CSS framework, using Bulma's provided classes, mainly the ones for [media](https://bulma.io/documentation/layout/media-object/#nesting) publishing.
 
