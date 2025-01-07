@@ -61,7 +61,7 @@ But! We already know how the URL of the post will look like as we can run locall
 
 ### The tooling
 
-As we had a good experience with the Zola's [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) concept with the video embedding [here](posts/the-tech-stack/#using-zola), we did jump into creating another one but for comments, from Mastodon.
+As we had a good experience with the Zola's [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) concept with the video embedding [here](/posts/the-tech-stack/#using-zola), we did jump into creating another one but for comments, from Mastodon.
 
 Getting to know Mastodon's API is a great experience as you can see in their documentation's section about [Playing with public data](https://docs.joinmastodon.org/client/public/), which is what we want and can do.
 
